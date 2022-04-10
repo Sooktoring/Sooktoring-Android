@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Sooktoring">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".signup.SignUpActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
     </application>
 
 </manifest>
