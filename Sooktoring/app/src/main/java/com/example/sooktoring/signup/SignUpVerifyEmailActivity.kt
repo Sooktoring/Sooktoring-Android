@@ -4,21 +4,20 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.sooktoring.R
-import com.example.sooktoring.databinding.ActivityLoginBinding
-import com.example.sooktoring.databinding.ActivitySignUpBinding
+import com.example.sooktoring.databinding.ActivitySignUpDoneBinding
+import com.example.sooktoring.databinding.ActivitySignUpVerifyEmailBinding
 
-class SignUpActivity : AppCompatActivity() {
-
-    private var mBinding: ActivitySignUpBinding? = null
+class SignUpVerifyEmailActivity : AppCompatActivity() {
+    private var mBinding: ActivitySignUpVerifyEmailBinding? = null
     private val binding get() = mBinding!!
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        mBinding = ActivitySignUpBinding.inflate(layoutInflater)
+        mBinding = ActivitySignUpVerifyEmailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         binding.btnJoin.setOnClickListener {
-            startActivity(Intent(this, SignUpVerifyEmailActivity::class.java))
+            startActivity(Intent(this, SignUpDoneActivity::class.java))
         }
 
     }
