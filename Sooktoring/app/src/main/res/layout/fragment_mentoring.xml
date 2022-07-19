@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMentoring">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="287dp"
+        android:layout_height="110dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="31dp"
+        android:textColor="#121212"
+        android:text="현직자 선배들에게 직접 듣는 멘토링!"
+        android:lineSpacingExtra="15sp"
+        android:textSize="36sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/SOPbutton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/button_mentoring_color"
+        android:text="자소서"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Aptitutebutton"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/button_mentoring_color"
+        android:text="인적성"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Meetingbutton"
+        android:layout_width="72dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="164dp"
+        android:background="@drawable/button_mentoring_color"
+        android:text="면접"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/portfoliobutton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/button_mentoring_color"
+        android:text="포트폴리오"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Experiencebutton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="216dp"
+        android:background="@drawable/button_mentoring_color"
+        android:text="실무경험"
+        android:textColor="#ffffff"
+        android:textSize="28sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="283dp"
+        android:lineSpacingExtra="8sp"
+        android:text="포트폴리오"
+        android:textColor="#4f5ee8"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="283dp"
+        android:lineSpacingExtra="8sp"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="추천 멘토" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="302dp"
+        android:layout_marginTop="287dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#4f5ee8"
+        android:lineSpacingExtra="8sp"
+        tools:text="더보기"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="321dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        android:textColor="#aaaaaa"
+        android:lineSpacingExtra="8sp"
+        tools:text="희망 직무를 기반으로 추천해드려요!"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHorizon"
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="355dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/mentor_item" />
+</FrameLayout>

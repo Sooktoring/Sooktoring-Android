@@ -12,7 +12,31 @@
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_sign_up.xml" value="0.31302083333333336" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_sign_up_done.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_sign_up_verify_email.xml" value="0.2672239108409321" />
+        <entry key="app/src/main/res/drawable-v24/bottom_click_color.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable-v24/button_mentoring.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable-v24/top_click_color.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/bottom_click_color.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/button_mentoring.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/button_mentoring_color.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/button_signup_sora_border.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.2175" />
+        <entry key="app/src/main/res/drawable/icon_chat.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/icon_home.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/top_click_color.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.23369565217391305" />
+        <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_group.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_mentoring.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_my.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/mentor_item.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/menu/navi_menu.xml" value="0.14537037037037037" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.179" />
       </map>
     </option>
   </component>
