@@ -32,17 +32,23 @@ class LoginActivity : AppCompatActivity() {
         mBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
+        var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+            .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
+            .requestEmail()
+            .build()
+
+        googleSignInClient = GoogleSignIn.getClient(this,gso)
+
+        binding.btnSignup.setOnClickListener{
+            startActivity(Intent(this, SignUpActivity::class.java))
         }
 
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-
-        val mGoogleSignInClient = GoogleSignIn.getClient(this,gso)
-
+        binding.btnLogin.setOnClickListener {
+            googleLogin()
+        }
     }
     private fun googleLogin() {
-//        startActivityForResult(signInIntent, RC_SIGN_IN)
+        startActivityForResult(signInIntent, RC_SIGN_IN)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -58,4 +64,25 @@ class LoginActivity : AppCompatActivity() {
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account : GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
+
+            if (account != null) {
+                val task = GoogleSignIn.getSignedInAccountFromIntent(signInIntent)
+                try {
+                    val account = task.getResult(ApiException::class.java)
+                    val authCode = account.serverAuthCode.toString()
+
+                    RetrofitManager.instance.servertest(authCode)
+
+                    // Show signed-un UI
+
+                } catch (e: ApiException) {
+                    Log.w(TAG, "Sign-in failed", e)
+                }
+            }
+        } catch (e: ApiException) {
+            // The ApiException status code indicates the detailed failure reason.
+            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+            Log.w("failed", "signInResult:failed code=" + e.statusCode)
+        }
+    }
 }
