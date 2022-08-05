@@ -32,31 +32,20 @@ class LoginActivity : AppCompatActivity() {
         mBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+        var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
             .requestEmail()
             .build()
-        val mGoogleSignInClient = GoogleSignIn.getClient(this,gso)
+
+        googleSignInClient = GoogleSignIn.getClient(this,gso)
+
+        binding.btnSignup.setOnClickListener{
+            startActivity(Intent(this, SignUpActivity::class.java))
+        }
 
         binding.btnLogin.setOnClickListener {
             googleLogin()
         }
-
-
-//        var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-//            .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
-//            .requestEmail()
-//            .build()
-//
-        googleSignInClient = GoogleSignIn.getClient(this,gso)
-//
-//        binding.btnSignup.setOnClickListener{
-//            startActivity(Intent(this, SignUpActivity::class.java))
-//        }
-//
-//        binding.btnLogin.setOnClickListener {
-//            googleLogin()
-//        }
     }
     private fun googleLogin() {
         startActivityForResult(signInIntent, RC_SIGN_IN)
@@ -77,9 +66,9 @@ class LoginActivity : AppCompatActivity() {
             val account : GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
 
             if (account != null) {
-//                val task = GoogleSignIn.getSignedInAccountFromIntent(signInIntent)
+                val task = GoogleSignIn.getSignedInAccountFromIntent(signInIntent)
                 try {
-//                    val account = task.getResult(ApiException::class.java)
+                    val account = task.getResult(ApiException::class.java)
                     val authCode = account.serverAuthCode.toString()
 
                     RetrofitManager.instance.servertest(authCode)

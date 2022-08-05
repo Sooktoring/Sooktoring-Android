@@ -41,7 +41,7 @@
         android:layout_toEndOf="@+id/LinearLayout"
         android:padding="6dp"
         android:text="취소"
-        android:textColor="@color/mentor_maincolor"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:textColor="@color/mentor_maincolor"/>
 
 </RelativeLayout>
