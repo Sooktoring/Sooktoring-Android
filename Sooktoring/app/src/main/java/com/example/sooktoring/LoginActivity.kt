@@ -24,25 +24,42 @@ class LoginActivity : AppCompatActivity() {
     private var mBinding: ActivityLoginBinding? = null
     private val binding get() = mBinding!!
 
+    lateinit var googleSignInClient : GoogleSignInClient
+    val signInIntent = googleSignInClient!!.signInIntent
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnLogin.setOnClickListener {
-            startActivity(Intent(this, MainActivity::class.java))
-        }
-
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
             .requestEmail()
             .build()
-
         val mGoogleSignInClient = GoogleSignIn.getClient(this,gso)
 
+        binding.btnLogin.setOnClickListener {
+            googleLogin()
+        }
+
+
+//        var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//            .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
+//            .requestEmail()
+//            .build()
+//
+        googleSignInClient = GoogleSignIn.getClient(this,gso)
+//
+//        binding.btnSignup.setOnClickListener{
+//            startActivity(Intent(this, SignUpActivity::class.java))
+//        }
+//
+//        binding.btnLogin.setOnClickListener {
+//            googleLogin()
+//        }
     }
     private fun googleLogin() {
-//        startActivityForResult(signInIntent, RC_SIGN_IN)
+        startActivityForResult(signInIntent, RC_SIGN_IN)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
