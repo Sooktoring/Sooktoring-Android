@@ -24,6 +24,9 @@ class LoginActivity : AppCompatActivity() {
     private var mBinding: ActivityLoginBinding? = null
     private val binding get() = mBinding!!
 
+    lateinit var googleSignInClient : GoogleSignInClient
+    val signInIntent = googleSignInClient!!.signInIntent
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityLoginBinding.inflate(layoutInflater)
@@ -34,9 +37,6 @@ class LoginActivity : AppCompatActivity() {
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
-            .requestEmail()
-            .build()
 
         val mGoogleSignInClient = GoogleSignIn.getClient(this,gso)
 
@@ -58,25 +58,4 @@ class LoginActivity : AppCompatActivity() {
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account : GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
-
-            if (account != null) {
-//                val task = GoogleSignIn.getSignedInAccountFromIntent(signInIntent)
-                try {
-//                    val account = task.getResult(ApiException::class.java)
-                    val authCode = account.serverAuthCode.toString()
-
-                    RetrofitManager.instance.servertest(authCode)
-
-                    // Show signed-un UI
-
-                } catch (e: ApiException) {
-                    Log.w(TAG, "Sign-in failed", e)
-                }
-            }
-        } catch (e: ApiException) {
-            // The ApiException status code indicates the detailed failure reason.
-            // Please refer to the GoogleSignInStatusCodes class reference for more information.
-            Log.w("failed", "signInResult:failed code=" + e.statusCode)
-        }
-    }
 }
