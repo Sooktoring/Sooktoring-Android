@@ -4,6 +4,7 @@ import android.R.attr.data
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sooktoring.databinding.ActivityLoginBinding
 import com.example.sooktoring.retrofit.RetrofitManager
@@ -42,21 +43,8 @@ class LoginActivity : AppCompatActivity() {
             googleLogin()
         }
 
-
-//        var gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-//            .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
-//            .requestEmail()
-//            .build()
-//
         googleSignInClient = GoogleSignIn.getClient(this,gso)
-//
-//        binding.btnSignup.setOnClickListener{
-//            startActivity(Intent(this, SignUpActivity::class.java))
-//        }
-//
-//        binding.btnLogin.setOnClickListener {
-//            googleLogin()
-//        }
+
     }
     private fun googleLogin() {
         startActivityForResult(signInIntent, RC_SIGN_IN)
@@ -77,22 +65,27 @@ class LoginActivity : AppCompatActivity() {
             val account : GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
 
             if (account != null) {
-//                val task = GoogleSignIn.getSignedInAccountFromIntent(signInIntent)
                 try {
-//                    val account = task.getResult(ApiException::class.java)
-                    val authCode = account.serverAuthCode.toString()
+                    val email = account?.email.toString()
+                    val googletoken = account?.idToken.toString()
 
-                    RetrofitManager.instance.servertest(authCode)
+                    RetrofitManager.instance.servertest(googletoken)
 
-                    // Show signed-un UI
+                    // 로그인 성공시 메인으으로 이동
+                    if(googletoken != null) {
+                        startActivity(Intent(this, MainActivity::class.java))
+                    }
 
                 } catch (e: ApiException) {
                     Log.w(TAG, "Sign-in failed", e)
                 }
             }
         } catch (e: ApiException) {
-            // The ApiException status code indicates the detailed failure reason.
-            // Please refer to the GoogleSignInStatusCodes class reference for more information.
+
+            if(e.statusCode == 12500) {
+                Toast.makeText(this, "숙명 계정으로 로그인 해 주세요", Toast.LENGTH_SHORT).show()
+            }
+
             Log.w("failed", "signInResult:failed code=" + e.statusCode)
         }
     }
