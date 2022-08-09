@@ -8,6 +8,11 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayout"
         app:tabTextAppearance="@style/tabTextSize"
