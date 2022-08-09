@@ -26,7 +26,7 @@ class FragmentMentoring : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_mentoring, container, true)
+        return inflater.inflate(R.layout.fragment_mentoring, container, false)
     }
 
 }

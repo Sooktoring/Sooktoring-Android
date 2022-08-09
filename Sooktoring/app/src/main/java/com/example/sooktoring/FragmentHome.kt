@@ -35,8 +35,8 @@ class FragmentHome : Fragment() {
     ): View? {
         var view: View = inflater.inflate(R.layout.fragment_home, container, false)
 
-        tabLayout = view.findViewById(R.id.tabLayout)
-        viewPager = view.findViewById(R.id.viewPager)
+        tabLayout = view.findViewById(R.id.layout_tabLayout)
+        viewPager = view.findViewById(R.id.layout_viewPager)
 
         val adapter = FragmentAdapter(this)
         viewPager.adapter = adapter
