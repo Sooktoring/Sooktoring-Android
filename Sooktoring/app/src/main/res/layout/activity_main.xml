@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     android:background="@color/white">
 
+<<<<<<< Updated upstream
     <FrameLayout
         android:id="@+id/main_container"
         android:layout_width="match_parent"
@@ -45,27 +46,28 @@
             android:text="공모전" />
     </com.google.android.material.tabs.TabLayout>
 
+=======
+>>>>>>> Stashed changes
     <ImageView
+        android:id="@+id/tab_image"
         android:layout_width="47dp"
         android:layout_height="47dp"
-        android:layout_marginTop="20dp"
         android:src="@drawable/button_alarm"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.82"
-        app:layout_constraintStart_toEndOf="@id/tabLayout"
-        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints">
 
     </ImageView>
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewPager"
+    <FrameLayout
+        android:id="@+id/frame_fragments"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tabLayout" />
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -78,7 +80,7 @@
         app:itemIconTint="@drawable/bottom_click_color"
         android:background="@drawable/background_bottomnavibar"
         app:labelVisibilityMode="unlabeled"
-        app:layout_constraintBottom_toBottomOf="@+id/viewPager"
+        app:layout_constraintBottom_toBottomOf="@+id/frame_fragments"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/navi_menu"
