@@ -11,4 +11,5 @@ object API {
 
     const val TEST : String = "/auth/login"
     const val POST_GOOGLE_LOGIN : String = "/auth/google"
+    const val USER_CERTIFICATION : String = "/auth/login"
 }
