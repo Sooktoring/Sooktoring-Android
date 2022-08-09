@@ -43,7 +43,8 @@
         <entry key="app/src/main/res/drawable/icon_home.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/top_click_color.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19166666666666668" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23369565217391305" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.17097264437689969" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.19166666666666668" />
