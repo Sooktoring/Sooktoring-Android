@@ -46,6 +46,7 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.17097264437689969" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/activity_sign_up_done.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_group.xml" value="0.19166666666666668" />
