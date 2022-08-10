@@ -8,9 +8,9 @@ import androidx.fragment.app.FragmentActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sooktoring.FragmentAdapter
-import com.example.sooktoring.FragmentContest
-import com.example.sooktoring.FragmentGroup
-import com.example.sooktoring.FragmentMentoring
+import com.example.sooktoring.home.FragmentContest
+import com.example.sooktoring.home.FragmentGroup
+import com.example.sooktoring.home.FragmentMentoring
 import com.example.sooktoring.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
