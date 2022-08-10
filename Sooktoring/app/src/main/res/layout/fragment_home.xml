@@ -8,19 +8,19 @@
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/layout_tabLayout"
-        app:tabTextAppearance="@style/tabTextSize"
         android:layout_width="244dp"
         android:layout_height="47dp"
-        app:tabIndicatorFullWidth="false"
-        app:tabTextColor="#aaaaaa"
-        app:tabSelectedTextColor="#4f5ee8"
-        app:tabIndicatorColor="#050e7c"
+        android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:background="@color/white">
-    </com.google.android.material.tabs.TabLayout>
+        app:tabIndicatorColor="#050e7c"
+        app:tabIndicatorFullWidth="false"
+        app:tabSelectedTextColor="#4f5ee8"
+        app:tabTextAppearance="@style/tabTextSize"
+        app:tabTextColor="#aaaaaa"
+        tools:ignore="SpeakableTextPresentCheck"></com.google.android.material.tabs.TabLayout>
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/layout_viewPager"

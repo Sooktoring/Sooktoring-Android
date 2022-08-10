@@ -47,10 +47,11 @@
         <entry key="app/src/main/res/layout/activity_search.xml" value="0.17097264437689969" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/activity_sign_up_done.xml" value="0.18333333333333332" />
+        <entry key="app/src/main/res/layout/activity_sign_up_verify_email.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_group.xml" value="0.19166666666666668" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
         <entry key="app/src/main/res/layout/fragment_mentoring.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_my.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/mentor_item.xml" value="0.19166666666666668" />

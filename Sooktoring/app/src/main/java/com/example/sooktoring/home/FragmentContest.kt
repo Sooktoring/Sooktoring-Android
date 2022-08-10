@@ -10,8 +10,8 @@ import com.example.sooktoring.R
 
 class FragmentContest : Fragment() {
     companion object {
-    fun newInstance() : FragmentContest = FragmentContest()
-}
+        fun newInstance() : FragmentContest = FragmentContest()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

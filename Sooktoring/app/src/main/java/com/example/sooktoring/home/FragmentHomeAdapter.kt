@@ -4,7 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 
 private const val NUM_PAGES = 3
-class FragmentAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
+class FragmentHomeAdapter(fragment: Fragment) : FragmentStateAdapter(fragment) {
     override fun getItemCount(): Int = NUM_PAGES
 
     override fun createFragment(position: Int): Fragment {
