@@ -44,6 +44,9 @@
         <entry key="app/src/main/res/drawable-v24/button_mentoring.xml" value="0.179" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.179" />
         <entry key="app/src/main/res/drawable-v24/top_click_color.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/backgournd_contest_items_list.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/background_contest_item.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/background_mentor_item.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/bottom_click_color.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_mentoring.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_mentoring_color.xml" value="0.1" />
@@ -59,11 +62,13 @@
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/activity_sign_up_done.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.19166666666666668" />
-        <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_group.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19166666666666668" />
-        <entry key="app/src/main/res/layout/fragment_mentoring.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_mentoring.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_my.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/item_contest.xml" value="0.4106145251396648" />
+        <entry key="app/src/main/res/layout/item_contest_items.xml" value="0.31364949544270837" />
         <entry key="app/src/main/res/layout/mentor_item.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/menu/navi_menu.xml" value="0.14537037037037037" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.179" />

@@ -68,12 +68,12 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerHorizon"
-        android:layout_width="match_parent"
-        android:layout_height="256dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="355dp"
+        android:id="@+id/contest_recycler"
+        android:layout_width="328dp"
+        android:layout_height="387dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="242dp"
         android:layout_weight="1"
-        tools:listitem="@layout/mentor_item" />
+        tools:listitem="@layout/item_contest" />
 
 </FrameLayout>
