@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img_AppLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_logo_sooktoring" />
+
+    <ImageView
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:src="@drawable/image_sooktoring_text"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선배와의 멘토링 커넥션"
+        android:textColor="#aaaaaa"/>
+
+</LinearLayout>
