@@ -1,134 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="360dp"
+    android:layout_width="match_parent"
     android:layout_gravity="center_horizontal"
     android:layout_height="match_parent"
     tools:context=".LoginActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center">
 
-    <LinearLayout
-        android:id="@+id/login_layout"
-        android:layout_width="match_parent"
+
+    <ImageView
+        android:id="@+id/img_AppLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_logo_sooktoring" />
+
+    <ImageView
+        android:layout_width="63dp"
+        android:layout_height="36dp"
+        android:src="@drawable/image_sooktoring_text"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:text="선배와의 멘토링 커넥션"
+        android:textColor="#aaaaaa"/>
 
-        <ImageView
-            android:id="@+id/img_AppLogo"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_marginLeft="146dp"
-            android:layout_marginRight="146dp"
-            android:src="@drawable/icon_logo_sooktoring" />
+    <ImageView
+        android:layout_width="272dp"
+        android:layout_height="96dp"
+        android:src="@drawable/image_login_text"
+        android:layout_marginTop="150dp"/>
 
-        <EditText
-            android:id="@+id/et_email_input"
-            android:background="@drawable/edittext_grey_border_white_background"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="24dp"
-            android:paddingLeft="8dp"
-            android:hint=" 이메일"
-            android:textSize="12sp"
-            android:textColorHint="#c4c4c4" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_google_signin"/>
 
-        <EditText
-            android:id="@+id/et_password_input"
-            android:background="@drawable/edittext_grey_border_white_background"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="24dp"
-            android:paddingLeft="8dp"
-            android:hint=" 패스워드"
-            android:textSize="12sp"
-            android:inputType="textPassword"
-            android:textColorHint="#c4c4c4" />
-
-
-        <LinearLayout
-            android:layout_width="360dp"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <CheckBox
-                android:id="@+id/cb_remember_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="24dp"
-                android:text="이메일 저장"
-                android:textColor="#404040"
-                android:textSize="12sp"/>
-
-            <CheckBox
-                android:id="@+id/cb_keep_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="14dp"
-                android:text="로그인 상태 유지"
-                android:textColor="#404040"
-                android:textSize="12sp" />
-        </LinearLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_login"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginRight="24dp"
-            android:background="@drawable/button_login_inactive_start"
-            android:theme="@style/Widget.AppCompat.Button" />
-
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_signup"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="12dp"
-            android:layout_marginRight="24dp"
-            android:background="@drawable/button_join_start"
-            android:textColor="@color/sora"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_marginBottom="50dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_find_email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="194dp"
-                android:text="아이디 찾기"
-                android:textColor="#404040"
-                android:textSize="12sp" />
-
-            <TextView
-                android:id="@+id/tv_find_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:text="비밀번호 찾기"
-                android:textColor="#404040"
-                android:textSize="12sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
