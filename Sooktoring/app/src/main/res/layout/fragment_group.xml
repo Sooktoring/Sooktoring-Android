@@ -59,11 +59,41 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="327dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="242dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="366dp">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="8sp"
+        tools:text="2021년 2학기 모집 동아리"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="39dp"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="#e84f6b"
+            android:lineSpacingExtra="8sp"
+            tools:text="더보기"/>
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerHorizon"
         android:layout_width="match_parent"
         android:layout_height="256dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="355dp"
+        android:layout_marginTop="410dp"
         android:layout_weight="1"
         tools:listitem="@layout/mentor_item" />
 
