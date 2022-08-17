@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="328dp"
+    android:layout_height="100dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_contest_item"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="10sp"
+            tools:text="한경 앱 챌린지"/>
+
+        <TextView
+            android:layout_width="32dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="160dp"
+            android:background="@drawable/background_contest_item_day"
+            android:layout_gravity="start"
+            android:text="D-3"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:gravity="center_horizontal" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>

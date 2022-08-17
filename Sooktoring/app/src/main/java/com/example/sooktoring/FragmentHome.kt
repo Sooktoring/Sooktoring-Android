@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
-import com.example.sooktoring.home.FragmentAdapter
+import com.example.sooktoring.home.FragmentHomeAdapter
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
@@ -35,13 +35,13 @@ class FragmentHome : Fragment() {
     ): View? {
         var view: View = inflater.inflate(R.layout.fragment_home, container, false)
 
-        tabLayout = view.findViewById(R.id.tabLayout)
-        viewPager = view.findViewById(R.id.viewPager)
+        tabLayout = view.findViewById(R.id.layout_tabLayout)
+        viewPager = view.findViewById(R.id.layout_viewPager)
 
-        val adapter = FragmentAdapter(this)
+        val adapter = FragmentHomeAdapter(this)
         viewPager.adapter = adapter
 
-        val tabName = arrayOf<String>("멘토링", "동아리", "공모전")
+        val tabName = listOf<String>("멘토링", "동아리", "공모전")
 
         //슬라이드로 이동했을 때, 탭이 같이 변경되도록
         TabLayoutMediator(tabLayout, viewPager) { tab, position ->

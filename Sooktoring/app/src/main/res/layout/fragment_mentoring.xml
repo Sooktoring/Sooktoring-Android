@@ -19,7 +19,7 @@
         android:layout_width="287dp"
         android:layout_height="110dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="31dp"
+        android:layout_marginTop="27dp"
         android:textColor="#121212"
         android:text="현직자 선배들에게 직접 듣는 멘토링!"
         android:lineSpacingExtra="15sp"
@@ -30,7 +30,7 @@
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="161dp"
         android:background="@drawable/button_filter_resume_unselect" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -38,7 +38,7 @@
         android:layout_width="100dp"
         android:layout_height="45dp"
         android:layout_marginLeft="128dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="161dp"
         android:background="@drawable/button_filter_test_unselect" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -46,7 +46,7 @@
         android:layout_width="72dp"
         android:layout_height="45dp"
         android:layout_marginLeft="240dp"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="161dp"
         android:background="@drawable/button_filter_interview_unselect" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -54,7 +54,7 @@
         android:layout_width="150dp"
         android:layout_height="45dp"
         android:layout_marginLeft="62dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="213dp"
         android:background="@drawable/button_filter_portfolio_unselect" />
 
     <androidx.appcompat.widget.AppCompatButton
@@ -62,7 +62,7 @@
         android:layout_width="120dp"
         android:layout_height="45dp"
         android:layout_marginLeft="224dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="213dp"
         android:background="@drawable/button_filter_experience_unselect" />
 
     <LinearLayout
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="283dp">
+        android:layout_marginTop="280dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -115,15 +115,12 @@
 
     </LinearLayout>
 
-
-
-
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerHorizon"
+        android:id="@+id/rv_mentor_list"
         android:layout_width="match_parent"
-        android:layout_height="256dp"
+        android:layout_height="264dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="355dp"
+        android:layout_marginTop="352dp"
         android:layout_weight="1"
         tools:listitem="@layout/mentor_item" />
 

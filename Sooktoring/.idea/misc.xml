@@ -3,28 +3,54 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/background_bottomnavibar.xml" value="0.2015" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/bottom_click_color.xml" value="0.2015" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/button_gray_background.xml" value="0.2" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/button_grey_background.xml" value="0.2015" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/button_mentoring_color.xml" value="0.2015" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/button_mentoring_color_unselect.xml" value="0.2015" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/button_signup_sora_border.xml" value="0.2" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/combobox_unchecked_box_grey.xml" value="0.185" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/edittext_gray_border_white_background.xml" value="0.2" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/ic_applogo_background.xml" value="0.1125" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/icon_chat.xml" value="0.2015" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/icon_home.xml" value="0.2015" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_main.xml" value="0.18177083333333333" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_main.xml" value="0.4" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_search.xml" value="0.4" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_sign_up.xml" value="0.31302083333333336" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_sign_up_done.xml" value="0.2672239108409321" />
         <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_sign_up_verify_email.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_chat.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_contest.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_group.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_home.xml" value="0.2046875" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_mentoring.xml" value="0.264" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_my.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/mentor_item.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/abcd2/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/menu/navi_menu.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/background_bottomnavibar.xml" value="0.1815" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/background_item_mentor.xml" value="0.2" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/background_item_mentor_background.xml" value="0.1815" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/background_mentor_item.xml" value="0.172" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/background_temp_profile.xml" value="0.1605" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/bottom_click_color.xml" value="0.171" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/drawable/button_mentoring_color.xml" value="0.172" />
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_login.xml" value="0.33" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_main.xml" value="0.33" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_chat.xml" value="0.3109375" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_contest.xml" value="0.43976449275362317" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_group.xml" value="0.43976449275362317" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_home.xml" value="0.43976449275362317" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_mentoring.xml" value="0.43976449275362317" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_my.xml" value="0.43976449275362317" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/mentor_item.xml" value="0.43976449275362317" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_main.xml" value="0.2651975683890577" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_splash.xml" value="0.32155797101449274" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_chat.xml" value="0.14537037037037037" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_home.xml" value="0.14537037037037037" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_init_profile_setting.xml" value="0.2669706180344478" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_mentoring.xml" value="0.48500881834215165" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/mentor_item.xml" value="0.33" />
         <entry key="app/src/main/res/drawable-v24/bottom_click_color.xml" value="0.179" />
         <entry key="app/src/main/res/drawable-v24/button_mentoring.xml" value="0.179" />
         <entry key="app/src/main/res/drawable-v24/ic_launcher_background.xml" value="0.179" />
         <entry key="app/src/main/res/drawable-v24/top_click_color.xml" value="0.179" />
+        <entry key="app/src/main/res/drawable/backgournd_contest_items_list.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/background_contest_item.xml" value="0.169" />
+        <entry key="app/src/main/res/drawable/background_mentor_item.xml" value="0.169" />
         <entry key="app/src/main/res/drawable/bottom_click_color.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_mentoring.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button_mentoring_color.xml" value="0.1" />
@@ -35,14 +61,18 @@
         <entry key="app/src/main/res/drawable/icon_home.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/top_click_color.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.19166666666666668" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23369565217391305" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search.xml" value="0.17097264437689969" />
         <entry key="app/src/main/res/layout/activity_sign_up.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/activity_sign_up_done.xml" value="0.18333333333333332" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.19166666666666668" />
-        <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_contest.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_group.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/layout/fragment_home.xml" value="0.19166666666666668" />
-        <entry key="app/src/main/res/layout/fragment_mentoring.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/fragment_mentoring.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_my.xml" value="0.19166666666666668" />
+        <entry key="app/src/main/res/layout/item_contest.xml" value="0.4106145251396648" />
+        <entry key="app/src/main/res/layout/item_contest_items.xml" value="0.31364949544270837" />
         <entry key="app/src/main/res/layout/mentor_item.xml" value="0.19166666666666668" />
         <entry key="app/src/main/res/menu/navi_menu.xml" value="0.14537037037037037" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.179" />

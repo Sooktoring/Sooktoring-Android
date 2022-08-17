@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sooktoring">
+    <!-- 사용자 권한 -->
+    <uses-permission android:name="android.permission.INTERNET" />
 
-    <!--  사용자 권한  -->
-    <uses-permission android:name="android.permission.INTERNET"/>
-    
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_applogo"
@@ -12,32 +11,34 @@
         android:roundIcon="@mipmap/ic_applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sooktoring"
-        android:usesCleartextTraffic="true" >
-        
+        android:usesCleartextTraffic="true">
         <activity
-            android:name=".SearchActivity"
-            android:exported="false" />
-        <activity
-            android:name=".signup.SignUpDoneActivity"
-            android:exported="false" />
-        <activity
-            android:name=".signup.SignUpVerifyEmailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".signup.SignUpActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" >
+            android:name=".SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".SearchActivity"
             android:exported="true" />
+        <activity
+            android:name=".signup.SignUpDoneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".signup.SignUpVerifyEmailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".signup.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

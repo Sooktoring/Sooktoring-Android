@@ -4,13 +4,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_gravity="center_horizontal"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:background="@color/white"
+    tools:context=".SplashActivity"
     android:orientation="vertical"
-    android:gravity="center">
-
+    android:gravity="center"
+    android:background="@color/white">
 
     <ImageView
         android:id="@+id/img_AppLogo"
@@ -29,18 +27,5 @@
         android:layout_height="wrap_content"
         android:text="선배와의 멘토링 커넥션"
         android:textColor="#aaaaaa"/>
-
-    <ImageView
-        android:layout_width="272dp"
-        android:layout_height="96dp"
-        android:src="@drawable/image_login_text"
-        android:layout_marginTop="150dp"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_login"
-        android:layout_width="196dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/button_google_signin"/>
 
 </LinearLayout>

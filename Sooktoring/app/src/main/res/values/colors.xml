@@ -14,4 +14,5 @@
     <color name="transparent">#00000000</color>
     <color name="main">#4f5ee8</color>
     <color name="mentor_maincolor">#4f5ee8</color>
+    <color name="profile_black">#121212</color>
 </resources>
