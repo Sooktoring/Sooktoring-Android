@@ -1,5 +1,6 @@
 package com.example.sooktoring.initProfile
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -26,6 +27,19 @@ class FragmentInitProfileSetting : Fragment() {
     ): View? {
         mBinding = FragmentInitProfileSettingBinding.inflate(inflater, container, false)
 
+        binding.btnGotoUnviinfo.setOnClickListener {
+            startUnivInfoActivity()
+        }
         return binding.root
+    }
+
+    private fun startUnivInfoActivity() {
+        val intent = Intent(activity, UnivInfoActivity::class.java)
+        startActivity(intent)
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        mBinding=null
     }
 }

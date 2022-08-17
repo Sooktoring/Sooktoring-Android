@@ -33,9 +33,112 @@
                 android:layout_height="42dp"
                 android:layout_marginLeft="145dp"
                 android:src="@drawable/icon_idsetting" />
-
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="27dp">
+
+            <ImageView
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_marginTop="4dp"
+                android:src="@drawable/image_profile_default"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="프로필 설정을 완료해주세요"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="7dp"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="@color/profile_black"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User name"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/profile_black"/>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/icon_profilemodify"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Step 1. 학적 정보 입력"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/profile_blue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user name"
+                android:textSize="16sp"
+                android:textColor="@color/profile_grey"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="님의 학적 정보를 입력해주세요"
+                android:textSize="16sp"
+                android:textColor="@color/profile_grey"/>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_goto_unviinfo"
+            android:layout_width="296dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_profile_univinfo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:text="Step 2. 프로필 설정"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/profile_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="프로필 사진, 닉네임, 정보 공개 범위를 설정해주세요."
+            android:textSize="16sp"
+            android:textColor="@color/profile_grey"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="296dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_profile_input_unactive"/>
     </LinearLayout>
 
 </FrameLayout>

@@ -1,6 +1,6 @@
 package com.example.sooktoring
 
-import android.R
+import android.R.attr.data
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -9,14 +9,17 @@ import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.sooktoring.DTO.LoginDTO
+import com.example.sooktoring.JWT.App
 import com.example.sooktoring.databinding.ActivityLoginBinding
 import com.example.sooktoring.retrofit.RetrofitClient
 import com.example.sooktoring.retrofit.RetrofitInterface
 import com.example.sooktoring.retrofit.RetrofitManager
+import com.example.sooktoring.signup.SignUpActivity
 import com.example.sooktoring.utils.API
 import com.example.sooktoring.utils.Constants.TAG
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
@@ -29,8 +32,7 @@ class LoginActivity : AppCompatActivity() {
     private var mBinding: ActivityLoginBinding? = null
     private val binding get() = mBinding!!
 
-    private lateinit var GoogleSignResultLauncher:ActivityResultLauncher<Intent>
-    private val iRetrofit : RetrofitInterface? = RetrofitClient.getClient(API.BASE_URL)?.create(RetrofitInterface::class.java)
+    private lateinit var GoogleSignResultLauncher: ActivityResultLauncher<Intent>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,8 +43,7 @@ class LoginActivity : AppCompatActivity() {
             .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
             .requestEmail()
             .build()
-
-        val mGoogleSignInClient = GoogleSignIn.getClient(this,gso)
+        val mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
         GoogleSignResultLauncher = registerForActivityResult(
             ActivityResultContracts.StartActivityForResult()){ result ->
@@ -56,25 +57,26 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+
     private fun handleSignInResult(completedTask: Task<GoogleSignInAccount>) {
         try {
             val account : GoogleSignInAccount = completedTask.getResult(ApiException::class.java)
 
             if (account != null) {
                 try {
-                    val email = account?.email.toString()
+//                    val email = account?.email.toString()
                     val googletoken = account?.idToken.toString()
 
-                    //RetrofitManager.instance.servertest(googletoken)
-                    userCertificate(googletoken)
+                    postJWTtoken(googletoken)
 
 
                     // 로그인 성공시 메인으으로 이동
                     if(googletoken != null) {
                         startActivity(Intent(this, MainActivity::class.java))
                     }
-                    Log.e("Google account", email)
-                    Log.e("Google account", googletoken)
+
+//                    Log.e("Google account 성공", email)
+                    Log.e("Google account 성공", googletoken)
 
                 } catch (e: ApiException) {
                     Log.w(TAG, "Google login: Sign-in failed", e)
@@ -94,25 +96,25 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    // 유저 인증 API
-    fun userCertificate(idToken: String?){
+    private val iRetrofit : RetrofitInterface? = RetrofitClient.getClient(API.BASE_URL)?.create(RetrofitInterface::class.java)
 
-        val token = idToken ?: ""
-        val call = iRetrofit?.userCertificate(idToken = token).let {
-            it
-        }?: return
+    fun postJWTtoken(Authorization: String?) {
+        val token = Authorization ?: ""
+        val call = iRetrofit?.postJWTtoken(idToken = token)
 
-        call.enqueue(object : retrofit2.Callback<LoginDTO>{
+        call?.enqueue(object : retrofit2.Callback<LoginDTO>{
             override fun onResponse(call: Call<LoginDTO>, response: Response<LoginDTO>) {
-                Log.d(TAG, "성공 RetrofitManager - onResponse() called / response : $response ")
-                Log.d(TAG, "성공 response.body : ${response.body()}")
-                Log.d(TAG, "성공 apptoken : ${response.body()?.appToken}")
+                var result: LoginDTO? = response.body()
+                App.prefs.token = result?.accessToken
+                App.prefs.refreshtoken = result?.refreshToken
+                Log.d(TAG, "JST token 발급 성공 : ${result.toString()} ")
+                Log.d(TAG, "최초 access 성공 : ${App.prefs.token.toString()} ")
+                Log.d(TAG, "최초 refresh 성공 : ${App.prefs.refreshtoken.toString()} ")
             }
 
             override fun onFailure(call: Call<LoginDTO>, t: Throwable) {
-                Log.d(TAG, "실패 RetrofitManager - onFailure() called / t: $t ")
+                TODO("Not yet implemented")
             }
-
         })
     }
 }

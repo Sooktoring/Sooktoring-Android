@@ -14,5 +14,10 @@
     <color name="transparent">#00000000</color>
     <color name="main">#4f5ee8</color>
     <color name="mentor_maincolor">#4f5ee8</color>
+
+    <!--  마이페이지 - 초기 프로필  -->
     <color name="profile_black">#121212</color>
+    <color name="profile_blue">#4f5ee8</color>
+    <color name="profile_grey">#aaaaaa</color>
+    <color name="profile_red">#fe0000</color>
 </resources>
