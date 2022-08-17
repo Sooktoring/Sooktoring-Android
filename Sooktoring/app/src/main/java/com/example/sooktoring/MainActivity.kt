@@ -5,7 +5,6 @@ import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-
 import androidx.fragment.app.FragmentActivity
 import com.google.android.material.tabs.TabLayoutMediator
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -32,7 +31,6 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemS
     private lateinit var chatFragment: FragmentChat
     private lateinit var myFragment: FragmentMy
     private lateinit var initProfileFragment : FragmentInitProfileSetting
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
