@@ -1,4 +1,4 @@
-package com.example.sooktoring
+package com.example.sooktoring.home
 
 import android.content.Context
 import android.os.Bundle
@@ -6,10 +6,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.sooktoring.R
 
-class FragmentChat : Fragment() {
+class FragmentMentoring : Fragment() {
     companion object {
-        fun newInstance() : FragmentChat = FragmentChat()
+        fun newInstance() : FragmentMentoring = FragmentMentoring()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +26,7 @@ class FragmentChat : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_chat, container, false)
-        //반환형 : View
+        return inflater.inflate(R.layout.fragment_mentoring, container, true)
     }
+
 }
