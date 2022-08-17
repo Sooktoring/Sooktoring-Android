@@ -8,9 +8,14 @@ import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.sooktoring.DTO.LoginDTO
+import com.example.sooktoring.JWT.App
 import com.example.sooktoring.databinding.ActivityLoginBinding
+import com.example.sooktoring.retrofit.RetrofitClient
+import com.example.sooktoring.retrofit.RetrofitInterface
 import com.example.sooktoring.retrofit.RetrofitManager
 import com.example.sooktoring.signup.SignUpActivity
+import com.example.sooktoring.utils.API
 import com.example.sooktoring.utils.Constants.TAG
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -18,6 +23,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
+import retrofit2.Call
+import retrofit2.Response
 
 
 class LoginActivity : AppCompatActivity() {
@@ -57,17 +64,19 @@ class LoginActivity : AppCompatActivity() {
 
             if (account != null) {
                 try {
-                    val email = account?.email.toString()
+//                    val email = account?.email.toString()
                     val googletoken = account?.idToken.toString()
 
-                    RetrofitManager.instance.servertest(googletoken)
+                    postJWTtoken(googletoken)
+
 
                     // 로그인 성공시 메인으으로 이동
                     if(googletoken != null) {
                         startActivity(Intent(this, MainActivity::class.java))
                     }
-                    Log.e("Google account", email)
-                    Log.e("Google account", googletoken)
+
+//                    Log.e("Google account 성공", email)
+                    Log.e("Google account 성공", googletoken)
 
                 } catch (e: ApiException) {
                     Log.w(TAG, "Google login: Sign-in failed", e)
@@ -85,5 +94,27 @@ class LoginActivity : AppCompatActivity() {
 
             Log.w("Google login: failed", "signInResult:failed code=" + e.statusCode)
         }
+    }
+
+    private val iRetrofit : RetrofitInterface? = RetrofitClient.getClient(API.BASE_URL)?.create(RetrofitInterface::class.java)
+
+    fun postJWTtoken(Authorization: String?) {
+        val token = Authorization ?: ""
+        val call = iRetrofit?.postJWTtoken(idToken = token)
+
+        call?.enqueue(object : retrofit2.Callback<LoginDTO>{
+            override fun onResponse(call: Call<LoginDTO>, response: Response<LoginDTO>) {
+                var result: LoginDTO? = response.body()
+                App.prefs.token = result?.accessToken
+                App.prefs.refreshtoken = result?.refreshToken
+                Log.d(TAG, "JST token 발급 성공 : ${result.toString()} ")
+                Log.d(TAG, "최초 access 성공 : ${App.prefs.token.toString()} ")
+                Log.d(TAG, "최초 refresh 성공 : ${App.prefs.refreshtoken.toString()} ")
+            }
+
+            override fun onFailure(call: Call<LoginDTO>, t: Throwable) {
+                TODO("Not yet implemented")
+            }
+        })
     }
 }

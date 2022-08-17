@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.sooktoring">
-    <!-- 사용자 권한 -->
-    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--  사용자 권한  -->
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,34 +12,39 @@
         android:roundIcon="@mipmap/ic_applogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.Sooktoring"
-        android:usesCleartextTraffic="true">
+        android:usesCleartextTraffic="true"
+        android:name=".JWT.App">
+
+        <activity android:name=".initProfile.UnivInfoActivity"
+            android:exported="true"/>
         <activity
             android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SearchActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".signup.SignUpDoneActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".signup.SignUpVerifyEmailActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".signup.SignUpActivity"
+
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
     </application>
 
 </manifest>
