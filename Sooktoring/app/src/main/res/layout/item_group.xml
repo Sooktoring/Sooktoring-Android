@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="256dp"
+    android:layout_marginHorizontal="8dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_mentor_item"
+    android:elevation="4dp"
+    android:gravity="center_horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp">
+        <ImageView
+            android:id="@+id/iv_mentor_profile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="39dp"
+            android:layout_gravity="center"
+            android:src="@drawable/background_temp_profile"/>
+
+        <TextView
+        android:layout_width="32dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="9dp"
+        android:background="#e8506c"
+        android:layout_gravity="start"
+        android:text="D-3"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="group name"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+
+
+    <TextView
+        android:id="@+id/group_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="group detail"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"/>
+
+
+    <TextView
+        android:id="@+id/group_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2021.09.05~2021.09.11"
+        android:textSize="12sp"
+        android:textColor="#aaaaaa"
+        android:textAlignment="center"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/brn_mentor_apply"
+        android:layout_width="123dp"
+        android:layout_height="32dp"
+        android:background="@drawable/button_group_apply"
+        android:layout_marginTop="6dp" />
+
+</LinearLayout>
