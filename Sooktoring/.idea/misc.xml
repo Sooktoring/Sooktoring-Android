@@ -39,10 +39,12 @@
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_main.xml" value="0.2651975683890577" />
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_splash.xml" value="0.32155797101449274" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/activity_univ_info.xml" value="0.3365036231884058" />
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_chat.xml" value="0.14537037037037037" />
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_home.xml" value="0.14537037037037037" />
-        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_init_profile_setting.xml" value="0.2669706180344478" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_init_profile_setting.xml" value="0.33" />
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_mentoring.xml" value="0.48500881834215165" />
+        <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/fragment_my.xml" value="0.3015625" />
         <entry key="..\:/Users/yoolim/Documents/GitHub/Sooktoring-Android/Sooktoring/app/src/main/res/layout/mentor_item.xml" value="0.33" />
         <entry key="app/src/main/res/drawable-v24/bottom_click_color.xml" value="0.179" />
         <entry key="app/src/main/res/drawable-v24/button_mentoring.xml" value="0.179" />
