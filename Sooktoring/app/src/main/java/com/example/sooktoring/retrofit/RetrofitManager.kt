@@ -35,7 +35,8 @@ class RetrofitManager {
             }
 
         })
-
     }
+
+
 
 }

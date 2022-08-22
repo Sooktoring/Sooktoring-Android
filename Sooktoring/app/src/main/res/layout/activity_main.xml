@@ -15,7 +15,6 @@
         android:src="@drawable/button_alarm"
         app:layout_constraintEnd_toEndOf="parent"
         tools:ignore="MissingConstraints">
-
     </ImageView>
 
     <FrameLayout
