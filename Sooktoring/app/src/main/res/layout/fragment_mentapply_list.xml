@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginLeft="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:fontFamily="@font/pretendard_semibold"
+        android:gravity="center_vertical"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textColor="#121212"
+        android:lineSpacingExtra="10sp"
+        tools:text="멘토링 신청 리스트"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="56dp"
+        android:id="@+id/contest_recycler"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_mentapply_list" />
+
+</FrameLayout>

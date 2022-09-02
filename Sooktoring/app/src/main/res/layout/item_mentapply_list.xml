@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="330dp"
+    android:layout_height="127dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+            <ImageView
+                android:id="@+id/iv_mentor_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/background_temp_profile"
+                tools:ignore="MissingConstraints" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginLeft="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:fontFamily="@font/pretendard_semibold"
+                        android:lineSpacingExtra="8sp"
+                        android:textColor="#121212"
+                        android:textSize="16sp"
+                        android:textStyle="normal"
+                        tools:text="mentee name" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="89dp"
+                        android:fontFamily="@font/pretendard_light"
+                        android:gravity="end"
+                        android:lineSpacingExtra="6sp"
+                        android:textColor="#aaaaaa"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        tools:text="YYYY/MM/DD" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/pretendard_light"
+                    android:lineSpacingExtra="6sp"
+                    android:textColor="#aaaaaa"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    tools:text="일이삼사오육칠팔구십일이삼사오육칠팔구십일이삼사...." />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/button_mentoring_yes_mini" />
+
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="8dp"
+                        android:src="@drawable/button_mentoring_no_mini" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#eeeeee" />
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
