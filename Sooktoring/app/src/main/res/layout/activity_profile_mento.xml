@@ -75,10 +75,10 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:id="@+id/iv_user_profile"
-                        android:layout_width="72dp"
-                        android:layout_height="72dp"
-                        android:src="@drawable/image_profile_default" />
+                    android:id="@+id/iv_user_profile"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@drawable/image_profile_default" />
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -108,7 +108,7 @@
                                 android:textSize="16sp"
                                 android:textColor="#121212"
                                 android:lineSpacingExtra="8sp"
-                                tools:text="멘티"/>
+                                tools:text="멘토"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -122,7 +122,7 @@
                                 android:textSize="14sp"
                                 android:textColor="#121212"
                                 android:lineSpacingExtra="7sp"
-                                tools:text="재학 (or 휴학)"/>
+                                tools:text="졸업 (or 수료, 유예)"/>
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -164,6 +164,17 @@
                         android:textColor="#121212"
                         android:lineSpacingExtra="7sp"
                         tools:text="전공명"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="138dp"
+                        android:fontFamily="@font/pretendard"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="#aaaaaa"
+                        android:lineSpacingExtra="7sp"
+                        android:gravity="end"
+                        tools:text="단과대"/>
                 </LinearLayout>
 
                 <LinearLayout
@@ -180,7 +191,7 @@
                         android:textSize="14sp"
                         android:textColor="#121212"
                         android:lineSpacingExtra="7sp"
-                        tools:text="복수전공"/>
+                        tools:text="제 2전공"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -191,6 +202,17 @@
                         android:textColor="#121212"
                         android:lineSpacingExtra="7sp"
                         tools:text="전공명"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="138dp"
+                        android:fontFamily="@font/pretendard"
+                        android:textStyle="normal"
+                        android:textSize="14sp"
+                        android:textColor="#aaaaaa"
+                        android:lineSpacingExtra="7sp"
+                        android:gravity="end"
+                        tools:text="단과대"/>
                 </LinearLayout>
             </LinearLayout>
 
@@ -382,25 +404,27 @@
 
             <TextView
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="23dp"
+                android:gravity="center"
                 android:fontFamily="@font/pretendard_semibold"
                 android:textStyle="normal"
                 android:textSize="20sp"
                 android:textColor="#4f5ee8"
                 android:lineSpacingExtra="10sp"
-                tools:text="대외활동"/>
+                tools:text="직무 경력"/>
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="28dp"
+                android:layout_height="24dp"
+                android:gravity="center"
                 android:layout_marginTop="16dp"
                 android:fontFamily="@font/pretendard_semibold"
                 android:textStyle="normal"
                 android:textSize="16sp"
                 android:textColor="#121212"
                 android:lineSpacingExtra="8sp"
-                tools:text="대외 활동명"/>
+                tools:text="직무"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -411,13 +435,14 @@
                 android:textSize="14sp"
                 android:textColor="#c4c4c4"
                 android:lineSpacingExtra="7sp"
-                tools:text="대외 활동 이름을 적어주세요"/>
+                tools:text="경험 직무를 적어주세요"/>
             <View
                 android:layout_width="320dp"
                 android:layout_height="1dp"
                 android:layout_marginTop="8dp"
                 android:background="#c4c4c4">
             </View>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="18dp"
@@ -429,7 +454,6 @@
                 android:lineSpacingExtra="6sp"
                 android:gravity="end"
                 tools:text="0/15"/>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -443,7 +467,7 @@
                     android:textSize="16sp"
                     android:textColor="#121212"
                     android:lineSpacingExtra="8sp"
-                    tools:text="활 기간"/>
+                    tools:text="근무 기간"/>
             </LinearLayout>
 
             <LinearLayout
@@ -523,7 +547,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="활동중" />
+                    android:text="재직중" />
             </LinearLayout>
 
             <TextView
@@ -534,7 +558,7 @@
                 android:textSize="16sp"
                 android:textColor="#121212"
                 android:lineSpacingExtra="8sp"
-                tools:text="활동 내용"/>
+                tools:text="직급"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -544,7 +568,7 @@
                 android:textSize="14sp"
                 android:textColor="#c4c4c4"
                 android:lineSpacingExtra="7sp"
-                tools:text="대외활동에 대한 내용이나 맡은 역할을 적어주세요"/>
+                tools:text="해당 경력에서의 직급을 적어주세요"/>
             <View
                 android:layout_width="320dp"
                 android:layout_height="1dp"
@@ -552,30 +576,18 @@
                 android:background="#c4c4c4">
             </View>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="18dp"
-                android:layout_marginLeft="297dp"
-                android:fontFamily="@font/pretendard_light"
-                android:textStyle="normal"
-                android:textSize="12sp"
-                android:textColor="#c4c4c4"
-                android:lineSpacingExtra="6sp"
-                android:gravity="end"
-                tools:text="0/15"/>
-
             <ImageView
                 android:layout_width="119dp"
                 android:layout_height="32dp"
                 android:layout_marginTop="12dp"
-                android:src="@drawable/button_plusclub"/>
+                android:src="@drawable/button_plusmajor"/>
 
             <ImageView
                 android:layout_width="296dp"
                 android:layout_height="40dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="12dp"
-                android:src="@drawable/button_profile_complate_unactive"
+                android:src="@drawable/button_profile_univinfo_unactive"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
