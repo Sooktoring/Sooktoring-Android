@@ -43,6 +43,7 @@ class LoginActivity : AppCompatActivity() {
             .requestIdToken("1086906219784-oter9rrh7k6bhffeihdpk6l1id1u26c8.apps.googleusercontent.com")
             .requestEmail()
             .build()
+
         val mGoogleSignInClient = GoogleSignIn.getClient(this, gso)
 
         GoogleSignResultLauncher = registerForActivityResult(
@@ -55,6 +56,7 @@ class LoginActivity : AppCompatActivity() {
             var signIntent: Intent = mGoogleSignInClient.getSignInIntent()
             GoogleSignResultLauncher.launch(signIntent)
         }
+
     }
 
 
@@ -68,6 +70,7 @@ class LoginActivity : AppCompatActivity() {
                     val googletoken = account?.idToken.toString()
 
                     postJWTtoken(googletoken)
+                    val authCode = account.serverAuthCode.toString()
 
 
                     // 로그인 성공시 메인으으로 이동
